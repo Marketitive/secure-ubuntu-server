@@ -40,25 +40,22 @@ This script transforms a "vanilla" Ubuntu 24.04 VPS into a professional-grade AI
 #### **Method A: The "One-Liner" (Silent Pro Mode)**
 Use this if you want to launch a server and walk away for a coffee. By exporting the variables first, the script runs entirely without human input.
 
-```bash
+Method A: The "One-Liner" Mode
+Use this if you want to set everything up in a single command.
+
+Bash
 export NEW_USER="your-user-name" \
        SSH_KEY="your-ssh-key" \
        GMAIL_USER="your-email-address" \
        GMAIL_PASS="your-gmail-app-password"
 
-curl -s [https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh](https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh) | bash
+curl -s https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh | bash
 Method B: The "Interactive" Mode
 If you run the script without setting variables, it will detect the missing information and prompt you for each detail step-by-step.
 
 Bash
-
-curl -s [https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh](https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh) | bash
+curl -s https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh | bash
 [!IMPORTANT] Security Note: If you use Method A, your Gmail App Password may remain in your terminal's history. Run history -c after setup to clear it, or use a Private GitHub Repository for your personal script.
 
-
----
-
-### 🎯 Final Step for the Day
-You now have the **Full Guide**, the **Personal Script**, the **External Template**, and the **Usage Instructions**. You have officially turned your manual server chores into a scalable infrastructure system.
-
-**Would you like me to help you push these files to your GitHub repository now, or are you ready to jump back into the VPS and launch OpenClaw?**
+🎯 Final Step for the Day
+You now have the Full Guide, the Personal Script, the External Template, and the Usage Instructions. You have officially turned your manual server chores into a scalable infrastructure system.
