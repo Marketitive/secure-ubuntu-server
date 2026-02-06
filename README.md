@@ -43,18 +43,22 @@ Use this if you want to launch a server and walk away for a coffee. By exporting
 Method A: The "One-Liner" Mode
 Use this if you want to set everything up in a single command.
 
-Bash
+```bash
 export NEW_USER="your-user-name" \
        SSH_KEY="your-ssh-key" \
        GMAIL_USER="your-email-address" \
        GMAIL_PASS="your-gmail-app-password"
 
-curl -s https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh | bash
+curl -s [https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh](https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh) | bash
+```
+
 Method B: The "Interactive" Mode
 If you run the script without setting variables, it will detect the missing information and prompt you for each detail step-by-step.
 
-Bash
+```bash
 curl -s https://raw.githubusercontent.com/your-repo/infra-scripts/main/vps_template.sh | bash
+```
+
 [!IMPORTANT] Security Note: If you use Method A, your Gmail App Password may remain in your terminal's history. Run history -c after setup to clear it, or use a Private GitHub Repository for your personal script.
 
 🎯 Final Step for the Day
